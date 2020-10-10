@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Trương Đức Vũ</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+      body {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        -ms-word-break: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        margin: 1em;
+        line-height: 1.6em;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 50em;
+        margin: auto;
+      }
+
+      .content {
+        margin-top: 1em;
+      }
+
+      .headline {
+        margin: auto;
+        margin-bottom: 1em;
+        overflow-wrap: nowrap;
+        word-wrap: nowrap;
+        word-break: nowrap;
+        display: flex;
+        align-content: center;
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .portrait {
+        max-height: 18em;
+      }
+
+      .portrait img {
+        display: block;
+        object-fit: contain;
+        width: auto;
+        height: 100%;
+        margin: auto;
+      }
+
+      .persona {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+      }
+
+      table.skills {
+        font-family: 'VT323', monospace;
+      }
+
+      .identity {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+      }
+
+      i.icon {
+        font-size: 1.5rem;
+      }
+
+      i.icon>img {
+        width: 1em;
+        height: 1em;
+      }
+
+      .identity i.icon {
+        font-size: 2rem;
+        filter: grayscale(100%);
+      }
+
+      .tagged-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      i.header>img {
+        font-size: 3rem;
+        width: 1em;
+        height: 1em;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: hsl(0, 0%, 15%);
+          color: hsl(0, 5%, 75%);
+        }
+        body h1 {
+          color: hsl(0, 5%, 95%);
+        }
+        body h2 {
+          color: hsl(0, 5%, 90%);
+        }
+        body a {
+          text-decoration: none;
+          color: hsl(330, 75%, 50%);
+        }
+        body a.icon {
+          text-decoration: none;
+          color: hsl(0, 5%, 75%);
+        }
+        body code {
+          color: hsl(330, 75%, 100%);
+        }
+        .container {
+          border-color: gray;
+        }
+        .invert {
+          filter: invert(1);
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        body {
+          background: white;
+          color: black;
+        }
+        body h1 {
+          color: black;
+        }
+        body h2 {
+          color: black;
+        }
+        body a {
+          text-decoration: none;
+          color: blue;
+        }
+        body a.icon {
+          text-decoration: none;
+          color: black;
+        }
+        body code {
+          color: black;
+        }
+        .invert {
+          filter: invert(0);
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .headline {
+          flex-direction: column;
+        }
+        .portrait {
+          width: auto;
+        }
+        .portrait img {
+          width: 100%;
+          height: auto;
+        }
+        .tagged-container {
+          flex-direction: column;
+        }
+      }
+
+      @page {
+        size: A4;
+      }
+
+      @media print {
+        body {
+          background: white;
+          color: black;
+          font-size: 8pt;
+          width: max-content;
+          margin: auto;
+        }
+        body h1 {
+          color: black;
+        }
+        body h2 {
+          color: black;
+        }
+        body a {
+          color: black;
+          text-decoration: none;
+        }
+        body code {
+          color: black;
+        }
+        section.sheet {
+          width: max-content;
+          margin: auto;
+        }
+        .header {
+          width: max-content;
+          margin: auto;
+        }
+        .container {
+          font-size: 6pt;
+          max-width: 75em;
+        }
+        .invert {
+          filter: invert(0);
+        }
+      }
+      
+    </style>
+  </head>
+  <body class="A4">
+    <section class="sheet">
+      <div class="headline">
+        <div class="portrait">
+          <img src="img/portrait.jpg" class="portrait"></img>
+          <!-- <img src="https://picsum.photos/300/400"></img> -->
+        </div>
+        <div class="persona">
+          <p>
+            First name: Vũ<br>
+            Middle + Last name: Trương Đức<br>
+            <div class="contact">
+              <i class="icon em em-hatching_chick">&#x1f423;</i> January 16th <i class="icon em em-capricorn">&#x2651;</i>, 1993<br>
+              <i class="icon em em-email">&#x1f4e7;</i> <a href="mailto://vu.truong.16193@gmail.com">vu.truong.16193@gmail.com</a><br>
+              <i class="icon em em-mobile_phone">&#x1f4f1;</i> <a href="callto://+841668918378">(+84) 36 8918 378</a><br>
+              <i class="icon fab fa-skype"></i> <a href="skype:vvfakevv@outlook.com?chat">vvfakevv</a> (or via <a href="https://join.skype.com/invite/lpakWKQeVTY6">web</a>)<br>
+              <i class="icon em em-flag-vn">&#x1f1fb;&#x1f1f3;</i> <i class="icon em em-flag-us">&#x1f1fa;&#x1f1f8;</i> <i class="icon em em-flag-jp">&#x1f1ef;&#x1f1f5;</i><br>
+            </div>
+          </p>
+        </div>
+        <div class="stats">
+          <table>
+            <tr>
+              <td>Focus</td>
+              <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></td>
+              <td>4/5</td>
+            </tr>
+            <tr>
+              <td>Creativity</td>
+              <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></td>
+              <td>3.5/5</td>
+            </tr>
+            <tr>
+              <td>Learning agility</td>
+              <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></td>
+              <td>4.5/5</td>
+            </tr>
+            <tr>
+              <td>Endurance</td>
+              <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></td>
+              <td>4.5/5</td>
+            </tr>
+            <tr>
+              <td>Will</td>
+              <td><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i></td>
+              <td>5.5/5</td>
+            </tr>
+          </table>
+          <hr>
+          <div class="identity">
+            Present as InNoobWeTrust at:
+            <p>
+              <a class="icon" href="https://www.linkedin.com/in/InNoobWeTrust"><i class="icon fab fa-linkedin"></i></a>
+              <a class="icon" href="https://github.com/InNoobWeTrust"><i class="icon fab fa-github"></i></a>
+              <a class="icon" href="https://exercism.io/profiles/InNoobWeTrust"><i class="icon"><img class="exercism invert" src="https://github.com/exercism/website-icons/raw/master/emoji/exercism.png"></img></i></a>
+              <a class="icon" href="https://www.sololearn.com/Profile/1215665"><i class="icon"><img src="img/sololearn.svg"></i></a>
+              <a class="icon" href="https://www.freecodecamp.org/InNoobWeTrust"><i class="icon fab fa-free-code-camp"></i></a>
+              <a class="icon" href="https://www.hackerrank.com/InNoobWeTrust"><i class="icon fab fa-hackerrank"></i></a>
+              <a class="icon" href="https://www.memrise.com/user/InNoobWeTrust/"><i class="icon"><img src="img/memrise.jpg"></img></i></a>
+              <a class="icon" href="http://steamcommunity.com/id/InNoobWeTrust"><i class="icon fab fa-steam"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <article class="container">
+        <!--<h1 align="center">Curriculum Vitae - Trương Đức Vũ</h1>-->
+        <hr>
+        <div class="content">
+          <div class="tagged-container">
+            <div class="tag">
+              <i class="em em-clipboard header">&#x1f4cb;</i>
+            </div>
+            <ul>
+              <li>
+                <u><b>KINTAMAnga (a manga <i class="icon em em-books">&#x1f4da;</i> reader app):</b></u> Started from scratch with no knowledge of Android or Kotlin before and release on Play store after 4 months of work (<a href="https://www.github.com/InNoobWeTrust/KINTAMAnga">https://www.github.com/InNoobWeTrust/KINTAMAnga</a>).
+              </li>
+              <li>
+                <u><b>dotfiles:</b></u> My config files for UNIX and terminal tools. Has pretty nice setup for coding in terminal with Neovim.
+              </li>
+              <li>
+                <u><b>Gist snippets (mostly scripts to automate boring stuff):</b></u> <a href="https://gist.github.com/InNoobWeTrust">https://gist.github.com/InNoobWeTrust</a>
+              </li>
+              <li>
+                <u><b>Graduate thesis:</b></u> using a robot arm for 3D printing <i class="icon emoji em-rocket">&#x1f680;</i>.
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="tagged-container">
+            <div class="tag">
+              <i class="header em em-briefcase">&#x1f4bc;</i>
+            </div>
+            <ul>
+              <li>
+                <u><b>July 2020 - now:</b></u> Part-time robotics research collaborator at Uniduc-JSC. Currently working on motor driver for robot joint, based on ODrive project, my fork: <a href="https://github.com/InNoobWeTrust/ODrive">InNoobWeTrust/ODrive</a>.
+              </li>
+              <li>
+                <u><b>December 2018 - July 2020:</b></u> System engineer at DEK technologies, doing system and middle-ware stuff. Dev: C/C++, python, shell script; system test: python, Java. Learned ways to maintain high-availability of the backend system and some cluster networking knowledge.
+              </li>
+              <li>
+                <u><b>June 2018 - December 2018:</b></u> Concentrate on studying Japanese and improving technical skills. Spend 4 months study Japanese from scratch then attend N4-equivalent express class.
+              </li>
+              <li>
+                <u><b>September 2017 - June 2018:</b></u> Part-time web content evaluator <i class="icon em em-earth_globe_americas">&#x1f30e;</i> for Appen. Intent was to learn the way how they organize the labeling of data in large scale.
+              </li>
+              <li>
+                <u><b>March 2017 - February 2018:</b></u> Solo android dev <i class="icon em em-bulb">&#x1f4a1;</i>, using Kotlin. Published first app in September 2017 on Google Play under the name "KINTAMAnga".
+              </li>
+              <li>
+                <u><b>February 2016 - March 2017:</b></u> Engineer in New-Tech department <i class="icon em em-microscope">&#x1f52c;</i> at Global-Cybersoft (now is Hitachi Consulting). Made prototypes from given requirements for department.
+                <ul>
+                  <li>
+                    Solve scheduling and planning problems using <a href="https://www.gecode.org/">Gecode</a> and google's <a href="https://developers.google.com/optimization">OR-tools</a>.
+                  </li>
+                  <li>
+                    Embedded development with <a href="https://www.nodemcu.com/index_en.html">NodeMCU</a> and <a href="https://micropython.org/">micropython</a> for smart-IoT project.
+                  </li>
+                  <li>
+                    Visualize network packet travel path using <a href="https://www.unrealengine.com">Unreal-Engine</a>.
+                  </li>
+                  <li>
+                    iOS app showing density of traffic on map, fork from <a href="https://github.com/traccar/traccar-manager-ios">traccar/traccar-manager-ios</a>.
+                  </li>
+                  <li>
+                    Internal tool to tune hyper-parameters for machine learning model using <a href="https://www.djangoproject.com/">Django</a>.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="tagged-container">
+            <div class="tag">
+              <i class="header em em-school">&#x1f3eb;</i>
+            </div>
+            <ul>
+              <li>
+                  <u><b>Before April 2016:</b></u> Electrical &amp; Electronic Engineering <i class="icon em em-high_voltage">&#x26a1;</i> at Bách Khoa university (International name: Ho Chi Minh City University of Technology | HCMUT-VNU). Major in Automation Control System - 7.77/10 GPA.
+              </li>
+              <li>
+                <u><b>After April 2016:</b></u> Self study IT and Software Development <i class="icon em em-laptop">&#x1f4bb;</i>. Got some certificates from Coursera:
+                <ul>
+                  <li>
+                      <u><b>Machine Learning <i class="fas fa-code"></i> - Coursera</b></u> (<i class="icon em em-hundred_points">&#x1f4af;</i><i class="icon fa fa-percent"></i>): <a href="https://www.coursera.org/account/accomplishments/records/UADBQR9M3C5D">https://www.coursera.org/account/accomplishments/records/UADBQR9M3C5D</a>.
+                  </li>
+                  <li>
+                      <u><b>Deep-Learning <i class="icon em em-alien">&#x1f47d;</i> specialization - Coursera</b></u> (<i class="icon em em-hundred_points">&#x1f4af;</i><i class="icon fa fa-percent"></i> for all 5 courses): <a href="https://www.coursera.org/account/accomplishments/specialization/MRFY9ZWLZKHA">https://www.coursera.org/account/accomplishments/specialization/MRFY9ZWLZKHA</a>.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener('load', function() {
+        twemoji.parse(document.body);
+      }, false);
+    </script>
+  </body>
+</html>
